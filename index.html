@@ -16,7 +16,8 @@ layout: default
     <div class="blog">
         {% for post in site.posts %}
             <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">> {{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+            <br>
+            <!-- <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time> -->
         {% endfor %}
     </div>
 </section>
